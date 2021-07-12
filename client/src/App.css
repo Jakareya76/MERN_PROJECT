@@ -1,0 +1,753 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+/*################ Start Navbar ################## */
+.navbar{
+    background-color: transparent;
+    width:100%;
+    height:100px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.brand_logo{
+    margin-left:100px;
+    font-size:20px;
+    color:rgb(75, 155, 51);
+}
+.brand_logo img{
+    width:100px;
+    height:50px;
+    object-fit:cover;
+}
+.nav-menu{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-right:100px;
+}
+.nav-item{
+    padding:0 15px;
+    list-style:none;
+}
+.nav-link{
+    text-decoration:none;
+    font-size:20px;
+    color:rgb(106, 184, 105);
+    font-weight:500;
+}
+.nav-link:hover{
+    color:rgb(169, 182, 141);
+    border-bottom:3px solid rgb(91, 189, 62);
+}
+.mobileMenu{
+    font-size:30px;
+    margin-right:100px;
+    cursor: pointer;
+    color:rgb(74, 187, 94);
+    display:none;
+}
+
+
+/* ################################################## */
+/* #################### Mobile Design ################ */
+/* ################################################### */
+
+@media (max-width: 768px) {
+        
+    .mobileMenu{
+        display:block;
+        margin-right:20px;
+    }
+
+    .brand_logo{
+        margin-left:10px;
+    }
+
+    .nav-item{
+        padding:25px 0;
+    }
+
+    .nav-menu{
+        display:flex;
+        flex-direction:column;
+        justify-content: flex-start;
+        position:absolute;
+        top: 100px;
+        width:100%;
+        height:70vh;
+        background-color:whitesmoke;
+        transform:translateX(-110%);
+        transition:all 0.6s ease;
+    }
+    .mobile-nav-active{
+        display:flex;
+        align-items:center;
+        flex-direction:column;
+        position:absolute;
+        top: 100px;
+        width:100%;
+        height:70vh;
+        background-color:whitesmoke;
+        transform:translateX();
+        transition:all 0.6s ease;
+    }
+
+}
+
+/*################ End Navbar ################## */
+
+/*################ Start Home ###################*/
+.home-page{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:90vh;
+    background-image: linear-gradient(#ffffff,#86b18e);
+}
+.home-div{
+    text-align:center;
+}
+.home-div p{
+    font-size:25px;
+    color:rgba(87, 0, 226, 0.476);
+    margin:10px;
+    font-weight:bold;
+    font-family:sans-serif;
+}
+.home-div h1{
+    font-size:40px;
+    color:rgb(61, 58, 66);
+    margin:10px;
+    font-family:sans-serif;
+}
+.home-div h2{
+    font-size:30px;
+    color:rgb(58, 66, 61);
+    margin:10px;
+    font-family:sans-serif;
+}
+
+/*################ End Home ###################*/
+
+
+/*############### Start About #################*/
+.about{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:90vh;
+    width:100%;
+}
+.about-container{
+    width:720px;
+    height:420px;
+    box-shadow:5px 5px 20px rgb(156, 207, 156);
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.about-top-are{
+    display:grid;
+    grid-template-columns:200px 300px 200px;
+}
+
+.about-top-1 img{
+    width:150px;
+    border:1px solid green;
+    margin-left:20px;
+    object-fit:cover;
+}
+.about-top-2 h3{
+    color:rgb(75, 170, 75);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.about-top-2 p{
+    color:rgb(71, 64, 64);
+    font-family: sans-serif;
+    margin:10px 0;
+}
+.about-top-2 span{
+    color:rgb(10, 24, 10);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.about-top-3 .edit-profile{
+    padding:10px 20px;
+    background-color:transparent;
+    border-radius:30px;
+    text-decoration:none;
+    border:2px solid rgb(69, 182, 69);
+    color:rgb(53, 151, 53);
+}
+
+.about-top-3 .edit-profile:hover{
+    background-color:rgb(59, 179, 59);
+    color:#fff;
+}
+
+
+.about-bottom-are{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.about-bottom-1{
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    flex-direction:column;
+    margin:10px 5px 0 20px;
+}
+.about-bottom-2{
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    flex-direction:column;
+    margin:10px 5px 0 20px;
+}
+.about-bottom-3{
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    flex-direction:column;
+    margin:10px 0 0 0 ;
+}
+.about-bottom-1 h4{
+    color:rgb(159, 192, 159);
+    margin:10px 0;
+}
+.about-bottom-1 .work-link{
+    color:rgb(34, 49, 211);
+    padding:5px 0;
+    text-decoration:none;
+    font-size:18px;
+}
+.about-bottom-1 .work-link:hover{
+    text-decoration:underline;
+}
+
+.about-bottom-2 h4{
+    padding:4px 0;
+    color:rgb(163, 137, 137);
+}
+.about-bottom-3 h4{
+    color:rgb(60, 60, 105);
+    padding:4px 0;
+}
+
+.edit-profile-mobile{
+    display:none;
+    padding:10px 20px;
+    background-color:transparent;
+    border-radius:30px;
+    text-decoration:none;
+    border:2px solid rgb(69, 182, 69);
+    color:rgb(53, 151, 53);
+}
+.edit-profile-mobile:hover{
+    background-color:rgb(69, 182, 69);
+    color:#fff;
+}   
+
+/* ################################################## */
+/* #################### Mobile Design ################ */
+/* ################################################### */
+
+@media (max-width:768px) {
+    .about-container{
+        width:540px;
+    }
+    .about-top-are{
+        display:grid;
+        grid-template-columns:200px 200px;
+    }
+    .about-top-3{
+        display:none;
+    }
+    .edit-profile-mobile{
+        display:block;
+        max-width:130px;
+        margin:10px -10px;
+    }
+
+}
+
+@media (max-width:560px) {
+    .about-container{
+        width:520px;
+    }
+    .about-bottom-1{
+        display:none;
+    }
+    .about-bottom-are{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media (max-width:440px) {
+    .about-container{
+        height:500px;
+    }
+    .about-top-are{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+    }
+}
+@media (max-width:360px) {
+   .about-bottom-are .about-bottom-2 h4{
+        font-size:13px;
+    }
+   .about-bottom-are .about-bottom-3 h4{
+        font-size:12px;
+    }
+}
+/*############### End About #################*/
+
+
+/*################ Start contact ##################*/
+
+.contact{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.contact-container{
+    width:700px;
+    height:400px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    box-shadow:5px 5px 20px rgb(145, 189, 146);
+    border-radius:10px;
+}
+.contact-container h1{
+    color:rgb(78, 175, 78);
+    margin:10px 0;
+}
+
+.contact-form{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.contact-form .contact-info input{
+    padding:10px 20px;
+    margin:10px;
+    outline:none;
+    border:none;
+    border-bottom:2px solid rgb(80, 179, 80);
+
+}
+.contact-form .contact-messages textarea{
+   border:1px solid rgb(90, 185, 90);
+   outline:none;
+}
+
+.send-message input{
+    padding:15px 35px;
+    margin-top:10px;
+    border:1px solid transparent;
+    border-radius:10px;
+    background-color:rgb(77, 195, 77);
+    font-size:18px;
+    color:#fff;
+    cursor: pointer;
+    transition:all 0.2s ease;
+}
+.send-message input:hover{
+    background-color:transparent;
+    border:1px solid rgb(61, 160, 61);
+    color:rgb(53, 173, 53);
+}
+
+/* ################################################## */
+/* #################### Mobile Design ################ */
+/* ################################################### */
+
+@media (max-width:768px) {
+    .contact-container{
+        max-width:600px;
+    }
+    .contact-form .contact-info{
+        display:flex;
+    }
+    .contact-form .contact-info input{
+        padding:10px 10px;
+        margin:5px;
+    }
+    .contact-form .contact-messages textarea{
+        max-width:540px;
+    }
+
+}
+@media (max-width:620px) {
+    .contact-container{
+        max-width:540px;
+    }
+    .contact-form .contact-info{
+        display:flex;
+        flex-direction:column;
+    }
+    .contact-form .contact-info input{
+        padding:10px 10px;
+        margin:5px;
+    }
+    .contact-form .contact-messages textarea{
+        max-width:420px;
+    }
+
+}
+
+@media (max-width:540px) {
+    .contact-container{
+        max-width:420px;
+        height:450px;
+    }
+    .contact-form .contact-messages textarea{
+        max-width:360px;
+    }
+    .send-message input{
+        padding:10px 20px;
+    }
+}
+@media (max-width:420px) {
+    .contact-container{
+        max-width:360px;
+    }
+    .contact-form .contact-messages textarea{
+        max-width:320px;
+    }
+}
+@media (max-width:320px) {
+    .contact-container{
+        max-width:280px;
+    }
+    .contact-form .contact-messages textarea{
+        max-width:250px;
+    }
+}
+/*################ End contact ##################*/
+
+
+/*################# Start Login ##################*/
+.login{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.login-container{
+    width:760px;
+    height:420px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:5px 5px 15px rgb(189, 207, 180);
+    border-radius:10px;
+}
+
+.login-container .left-login img{
+    width:300px;
+    object-fit:cover;
+}
+.left-login{
+   margin-right:100px;
+}
+
+.right-login h1{
+    color:rgb(60, 180, 60);
+}
+
+.right-login input[type=text],
+.right-login input[type=password]
+{
+    padding:10px 35px;
+    margin-top:20px;
+    border:none;
+    outline:none;
+    border-bottom:1px solid rgb(84, 187, 84);
+    background-color:transparent;
+}
+
+.right-login input[type=submit]{
+    padding:10px 30px;
+    margin-top:25px;
+    font-size:17px;
+    border-radius:10px;
+    border:1px solid transparent;
+    background-color: rgb(79, 173, 79);
+    color:#fff;
+    cursor: pointer;
+    transition:all 0.2s ease;
+    margin-bottom:10px;
+}
+.right-login input[type=submit]:hover{
+    background-color:transparent;
+    border:1px solid rgb(63, 167, 63);
+    color:rgb(63, 182, 63);
+}
+.right-login form i{
+    margin-right:-20px;
+    color:rgb(53, 172, 53);
+}
+
+/* ################################################## */
+/* #################### Mobile Design ################ */
+/* ################################################### */
+
+@media (max-width:768px) {
+    .login-container{
+        width:620px;
+    }
+    .login-container .left-login img{
+        width:200px;
+    }
+}
+
+@media (max-width:640px) {
+    .login-container{
+        width:540px;
+    }
+
+    .left-login{
+        margin-right:50px;
+    }
+    .login-container .left-login img{
+        width:200px;
+    }
+    .right-login{
+        margin-right:50px;
+    }
+}
+
+@media (max-width:540px) {
+    .login-container{
+        width:420px;
+        height:540px;
+        display:flex;
+        flex-direction:column;
+    }
+    .right-login form{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+    .right-login{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+}
+@media (max-width:425px) {
+    .login-container{
+        width:320px;
+        height:540px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+}
+@media (max-width:320px) {
+    .login-container{
+        width:270px;
+        height:500px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+    .right-login input[type=text],
+    .right-login input[type=password]{
+        margin-left:50px;
+    }
+    .right-login form i{
+        display:none;
+    }
+}
+
+
+/*################# End Login ##################*/
+
+
+/*############### Start Sing Up ##################*/
+.singup{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.singup-container{
+    width:760px;
+    height:500px;
+    box-shadow:5px 5px 20px rgb(163, 214, 189);
+    border-radius:20px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    align-content:center;
+    justify-items:center;
+}
+
+.singup-left-area h1{
+    color:rgb(54, 161, 54);
+    font-size:40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.singup-left-area form input{
+  padding:10px 30px;
+  margin-top:15px;
+  border:none;
+  outline:none;
+  border-bottom:2px solid rgb(141, 241, 141);
+  background-color:transparent;
+}
+.singup-left-area form i{
+    margin-right:-20px;
+    color:rgb(67, 190, 67);
+}
+
+.reg-btn input[type='submit']{
+    padding:10px 30px;
+    margin-top:15px;
+    border:1px solid transparent;
+    border-radius:5px;
+    background-color:rgb(83, 192, 83);
+    color:#fff;
+    font-family:sans-serif;
+    font-size:15px;
+    cursor: pointer;
+    transition:all 0.2s ease;
+}
+
+.reg-btn input[type='submit']:hover{
+    background-color:transparent;
+    border:1px solid rgb(86, 151, 86);
+    color:rgb(71, 160, 71);
+}
+
+.singup-right-area{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.singup-right-area .Already-Registered-Link{
+    color:green;
+    font-size:17px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration:none;
+}
+
+.singup-right-area .Already-Registered-Link:hover{
+    color:gray;
+    text-decoration:underline;
+}
+
+.singup-right-area img{
+    width:350px;
+    height:350px;
+    object-fit:cover;
+}
+
+
+/* ################################################## */
+/* #################### Mobile Design ################ */
+/* ################################################### */
+
+@media (max-width:768px) {
+    .singup-container{
+        width:600px;
+    }
+    .singup-right-area img{
+        width:250px;
+        height:250px;
+    }
+
+}
+@media (max-width:620px) {
+    .singup-container{
+        width:500px;
+    }
+    .singup-right-area img{
+        width:250px;
+        height:250px;
+    }
+
+}
+@media (max-width:540px) {
+
+    .singup-container{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        height:720px;
+        width:400px;
+    }
+
+}
+@media (max-width:420px) {
+
+    .singup-container{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        height:720px;
+        width:320px;
+    }
+
+}
+@media (max-width:360px) {
+
+    .singup-container{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        height:700px;
+        width:300px;
+    }
+
+}
+/*############### End Sing Up ##################*/
+
+
+
+/*################## 404 Page  ###############*/
+
+.error-page-container{
+    width:100%;
+    height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    background:linear-gradient(#fff , rgb(224, 97, 97));
+}
+.error-page-container h1{
+    font-size:50px;
+    color:rgb(133, 113, 113);
+}
+.error-page-to-go-back{
+    padding:10px 40px;
+    background:rgb(68, 172, 68);
+    margin:20px 0;
+    font-size:20px;
+    text-decoration:none;
+    color:rgb(226, 218, 218);
+    border-radius:30px;
+}
+
+
+
+
+
+
