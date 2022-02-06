@@ -1,4 +1,4 @@
-import React,{useEffect ,useState} from 'react';
+import {useEffect ,useState} from 'react';
 import userImg from './assets/user.jpg';
 import {Link} from 'react-router-dom';
 import {useHistory} from 'react-router-dom';
