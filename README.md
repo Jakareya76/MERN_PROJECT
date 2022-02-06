@@ -1,2 +1,2 @@
 # MENR-Stack
-This a small mern project
+Simple Node Js And React Js Project
