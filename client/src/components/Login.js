@@ -1,17 +1,14 @@
-import React,{useState , useContext} from 'react';
+import {useState , useContext} from 'react';
 import loginImg from './assets/login.png';
 import {useHistory} from 'react-router-dom';
-
 import {userContext} from '../App';
 
+
 function Login() {
-
-
     const {state , dispatch} = useContext(userContext);
-
-    const history = useHistory();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const history = useHistory();
 
     const loginUser = async(event) =>{
         event.preventDefault();
